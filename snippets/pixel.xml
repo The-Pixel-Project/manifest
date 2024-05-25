@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Github -->
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <!-- GitHub (Pixel-Project) -->
+  <remote  name="pixel"
+           fetch="https://github.com/The-Pixel-Project/"
+           revision="fourteen" />
+
+  <!-- Gitlab (Pixel-Project) -->
+  <remote  name="pixel-gitlab"
+           fetch="https://gitlab.com/The-Pixel-Project/"
+           revision="fourteen" />
+
+  <!-- Rootdir -->
+  <project path="bionic" name="bionic" groups="pdk" remote="pixel" />
+  <project path="manifest" name="manifest" remote="pixel" />
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="pixel" />
+
+  <!-- Build -->
+  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="pixel" >
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
+    <linkfile dest="build/core" src="core" />
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh" />
+    <linkfile dest="build/target" src="target" />
+    <linkfile dest="build/tools" src="tools" />
+  </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="pixel" >
+    <linkfile dest="Android.bp" src="root.bp" />
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
+  </project>
+
+  <!-- Device -->
+  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="pixel" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" groups="qcom,sdm660" remote="pixel" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="pixel" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="pixel" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="pixel" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="pixel" />
+
+  <!-- Hardware -->
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="pixel" >
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8953/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8450/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8450/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
+  </project>
+
+  <!-- Packages -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="pixel" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="pixel" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="pixel" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="pixel" />
+
+  <!-- System -->
+  <project path="system/core" name="system_core" groups="pdk" remote="pixel" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="pixel" />
+  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="pixel" />
+
+  <!-- Vendor -->
+  <project path="vendor/aosp" name="vendor_aosp" remote="pixel" />
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="pixel" />
+  <project path="vendor/gms" name="vendor_gms" remote="pixel-gitlab" clone-depth="1" />
+</manifest>
