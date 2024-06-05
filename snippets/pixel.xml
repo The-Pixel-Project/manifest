@@ -79,8 +79,11 @@
   <!-- Packages -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="pixel" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="pixel" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk" remote="pixel" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="pixel" />
+  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="pixel" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="pixel" />
+  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="pixel" />
 
   <!-- System -->
   <project path="system/core" name="system_core" groups="pdk" remote="pixel" />
@@ -90,5 +93,7 @@
   <!-- Vendor -->
   <project path="vendor/aosp" name="vendor_aosp" remote="pixel" />
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="pixel" />
+  <project path="vendor/certification" name="vendor_certification" remote="pixel-gitlab" />
   <project path="vendor/gms" name="vendor_gms" remote="pixel-gitlab" clone-depth="1" />
+  <project path="vendor/PixelPropsUtils" name="vendor_PixelPropsUtils" remote="pixel" />
 </manifest>
