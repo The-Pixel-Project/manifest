@@ -47,6 +47,7 @@
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="pixel" />
 
   <!-- Hardware -->
+  <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="pixel" />
   <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="pixel" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
