@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remotes -->
+  <remote name="tpp"
+          fetch="https://github.com/The-Pixel-Project"
+          revision="fourteen-qpr3" />
+
+  <remote name="tpp-gitlab"
+          fetch="https://gitlab.com/tpp_gms"
+          revision="fourteen-qpr3" />
+
+  <remote name="tpp-devices"
+          fetch="https://github.com/TPP-OFFICIAL-DEVICES"
+          revision="fourteen" />
+
+
+
+  <!-- General repos -->
+  <project path="art" name="art" remote="tpp" />
+  <project path="bionic" name="bionic" remote="tpp" />
+  <project path="build/make" name="build" remote="tpp">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="tpp">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="bootable/recovery" name="bootable_recovery" remote="tpp" />
+  <project path="kernel/configs" name="kernel_configs" remote="tpp" />
+  <project path="manifest" name="manifest" remote="tpp" />
+  <project path="platform_testing" name="platform_testing" remote="tpp" />
+
+  <!-- External repos -->
+  <project path="external/arm-trusted-firmware" name="external_arm-trusted-firmware" remote="tpp" />
+  <project path="external/avb" name="external_avb" remote="tpp" />
+  <project path="external/cronet" name="external_cronet" remote="tpp" />
+  <project path="external/dtc" name="external_dtc" remote="tpp" />
+  <project path="external/e2fsprogs" name="external_e2fsprogs" remote="tpp" />
+  <project path="external/exfatprogs" name="external_exfatprogs" remote="tpp" />
+  <project path="external/gptfdisk" name="external_gptfdisk" remote="tpp" />
+  <project path="external/libcxx" name="external_libcxx" remote="tpp" />
+  <project path="external/libnl" name="external_libnl" remote="tpp" />
+  <project path="external/mksh" name="external_mksh" remote="tpp" />
+  <project path="external/tinyalsa" name="external_tinyalsa" remote="tpp" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="tpp" />
+  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="tpp" />
+  <project path="external/zstd" name="external_zstd" remote="tpp" />
+
+  <!-- Framework repos -->
+  <project path="frameworks/av" name="frameworks_av" remote="tpp" />
+  <project path="frameworks/base" name="frameworks_base" remote="tpp" />
+  <project path="frameworks/native" name="frameworks_native" remote="tpp" />
+  <project path="frameworks/opt/calendar" name="frameworks_opt_calendar" remote="tpp" />
+  <project path="frameworks/opt/colorpicker" name="frameworks_opt_colorpicker" remote="tpp" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="tpp" />
+  <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" remote="tpp" />
+
+  <!-- Hardware repos -->
+  <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="tpp" />
+  <project path="hardware/google/gchips" name="hardware_google_gchips" remote="tpp" />
+  <project path="hardware/google/graphics/common" name="hardware_google_graphics_common" remote="tpp" />
+  <project path="hardware/google/pixel" name="hardware_google_pixel" remote="tpp" />
+  <project path="hardware/google/pixel-sepolicy" name="hardware_google_pixel-sepolicy" remote="tpp" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="tpp" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="tpp" />
+  <project path="hardware/ril" name="hardware_ril" remote="tpp" />
+  <project path="hardware/samsung/nfc" name="hardware_samsung_nfc" remote="tpp" />
+  <project path="hardware/st/nfc" name="hardware_st_nfc" remote="tpp" />
+  <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="tpp" />
+
+  <!-- Packages repos -->
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="tpp" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="tpp" />
+  <project path="packages/apps/Stk" name="packages_apps_Stk" remote="tpp" />
+  <project path="packages/modules/adb" name="packages_modules_adb" remote="tpp" />
+  <project path="packages/modules/common" name="packages_modules_common" remote="tpp" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="tpp" />
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="tpp" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="tpp" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="tpp" />
+
+  <!-- System repos -->
+  <project path="system/bpf" name="system_bpf" remote="tpp" />
+  <project path="system/extras" name="system_extras" remote="tpp" />
+  <project path="system/keymaster" name="system_keymaster" remote="tpp" />
+  <project path="system/core" name="system_core" remote="tpp" />
+  <project path="system/libhidl" name="system_libhidl" remote="tpp" />
+  <project path="system/libziparchive" name="system_libziparchive" remote="tpp" />
+  <project path="system/logging" name="system_logging" remote="tpp" />
+  <project path="system/media" name="system_media" remote="tpp" />
+  <project path="system/netd" name="system_netd" remote="tpp" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="tpp" />
+  <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="tpp" />
+  <project path="system/update_engine" name="system_update_engine" remote="tpp" />
+  <project path="system/vold" name="system_vold" remote="tpp" />
+
+  <include name="snippets/tpp-extras.xml" />
+  <include name="snippets/tpp-caf.xml" />
+</manifest>
