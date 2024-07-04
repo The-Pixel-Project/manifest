@@ -10,10 +10,24 @@
           revision="fourteen-qpr3" />
 
   <remote name="tpp-devices"
-          fetch="https://github.com/TPP-OFFICIAL-DEVICES"
+          fetch="https://github.com/Tpp-Devices"
           revision="fourteen" />
 
+  <!-- Github -->
+  <remote  name="github"
+           fetch="https://github.com/" />
 
+  <!-- Github -->
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+           
+  <!-- Bitbucket -->
+  <remote  name="bitbucket"
+           fetch="https://bitbucket.org" />
+           
+  <!-- Gitea -->
+  <remote  name="gitea"
+           fetch="https://gitea.com" />
 
   <!-- General repos -->
   <project path="art" name="art" remote="tpp" />
