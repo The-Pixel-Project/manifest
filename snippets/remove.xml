@@ -142,6 +142,7 @@
   <remove-project name="platform/packages/screensavers/PhotoTable" />
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/services/Telephony" />
+  <remove-project name="platform/packages/services/DeviceAsWebcam" />
 
   <!-- Prebuilts repos -->
   <remove-project name="platform/prebuilts/module_sdk/art" />

@@ -98,6 +98,7 @@
   <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="tpp" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="tpp" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="tpp" />
+  <project path="packages/services/DeviceAsWebcam" name="packages_services_DeviceAsWebcam" remote="tpp" />
 
   <!-- System repos -->
   <project path="system/bpf" name="system_bpf" remote="tpp" />
