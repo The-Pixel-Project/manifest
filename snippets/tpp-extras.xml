@@ -28,7 +28,7 @@
   <project path="vendor/certification" name="vendor_certification" remote="tpp-gitlab" />
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="tpp" />
   <project path="vendor/custom" name="vendor_custom" remote="tpp" />
-  <project path="vendor/official_devices" name="official_devices" remote="tpp" revision="fourteen"/>
+  <project path="vendor/official_devices" name="official_devices" remote="tpp" revision="fourteen-qpr3"/>
 
   <!-- Google repos -->
   <project path="vendor/google/dexopt_profiles" name="vendor_google_dexopt_profiles" remote="tpp-gitlab" />
