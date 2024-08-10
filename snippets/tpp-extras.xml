@@ -38,5 +38,5 @@
   <project path="vendor/google/mainline_modules" name="vendor_google_mainline_modules" remote="tpp" />
   <project path="vendor/google/pixel-additional" name="vendor_google_pixel-additional" remote="tpp" />
   <project path="vendor/google/pixel-framework" name="vendor_google_pixel-framework" remote="tpp" />
-  <project path="packages/overlays/ThemeIcons" name="packages_overlays_ThemeIcons" remote="tpp" />
+  <project path="vendor/google/ThemeIcons" name="vendor_google_ThemeIcons" remote="tpp" />
 </manifest>
