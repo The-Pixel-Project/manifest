@@ -17,6 +17,7 @@
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="tpp" />
   <project path="packages/apps/BtHelper" name="packages_apps_BtHelper" remote="tpp" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="tpp" />
+  <project path="packages/apps/Pif" name="packages_apps_Pif" remote="tpp" />
 
   <!-- Prebuilts repos -->
   <project path="prebuilts/custom-sdk" name="prebuilts_custom-sdk" remote="tpp" />
