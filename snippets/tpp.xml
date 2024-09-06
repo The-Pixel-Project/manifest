@@ -88,6 +88,7 @@
   <project path="hardware/samsung/nfc" name="hardware_samsung_nfc" remote="tpp" />
   <project path="hardware/st/nfc" name="hardware_st_nfc" remote="tpp" />
   <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="tpp" />
+  <project path="hardware/mediatek" name="hardware_mediatek" remote="tpp" />
 
   <!-- Packages repos -->
     <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk" remote="tpp" />
@@ -116,6 +117,9 @@
   <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="tpp" />
   <project path="system/update_engine" name="system_update_engine" remote="tpp" />
   <project path="system/vold" name="system_vold" remote="tpp" />
+
+  <!-- Device repos -->
+  <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="tpp"/>
 
   <include name="snippets/tpp-extras.xml" />
   <include name="snippets/tpp-caf.xml" />
