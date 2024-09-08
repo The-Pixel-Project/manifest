@@ -66,6 +66,7 @@
   <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="tpp" />
   <project path="external/zstd" name="external_zstd" remote="tpp" />
   <project path="external/skia" name="external_skia" remote="tpp" />
+  <project path="external/boringssl" name="external_boringssl" remote="tpp" />
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="tpp" />
@@ -117,6 +118,7 @@
   <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="tpp" />
   <project path="system/update_engine" name="system_update_engine" remote="tpp" />
   <project path="system/vold" name="system_vold" remote="tpp" />
+  <project path="system/security" name="system_security" remote="tpp" />
 
   <!-- Device repos -->
   <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="tpp"/>
