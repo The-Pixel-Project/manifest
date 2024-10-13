@@ -92,6 +92,8 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/platform_testing" />
+  <remove-project name="platform/libcore" />
+  <remove-project name="platform/build/release" />
 
   <!-- Hardware repos -->
   <remove-project name="platform/hardware/broadcom/libbt" />
@@ -146,6 +148,8 @@
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/packages/services/DeviceAsWebcam" />
+  <remove-project name="platform/packages/modules/IntentResolver" />
+  <remove-project name="platform/packages/modules/Wifi" />
 
   <!-- Prebuilts repos -->
   <remove-project name="platform/prebuilts/module_sdk/art" />

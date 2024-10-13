@@ -49,6 +49,8 @@
   <project path="kernel/configs" name="kernel_configs" remote="tpp" />
   <project path="manifest" name="manifest" remote="tpp" />
   <project path="platform_testing" name="platform_testing" remote="tpp" />
+  <project path="libcore" name="libcore" groups="pdk" remote="tpp" />
+  <project path="build/release" name="build_release" groups="pdk,tradefed" remote="tpp" />
 
   <!-- External repos -->
   <project path="external/arm-trusted-firmware" name="external_arm-trusted-firmware" remote="tpp" />
@@ -103,6 +105,8 @@
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="tpp" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="tpp" />
   <project path="packages/services/DeviceAsWebcam" name="packages_services_DeviceAsWebcam" remote="tpp" />
+  <project path="packages/modules/IntentResolver" name="packages_modules_IntentResolver" groups="pdk,sysui-studio" remote="tpp" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="tpp" />
 
   <!-- System repos -->
   <project path="system/bpf" name="system_bpf" remote="tpp" />
