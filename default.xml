@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-15.0.0_r32"
            remote="aosp"
@@ -1063,5 +1063,14 @@
     <copyfile src="lk_inc.mk" dest="lk_inc.mk" />
   </project>
   <!-- END open-source projects -->
+
+   <!-- Remove unused AOSP repos -->
+   <include name="snippets/remove.xml" />
+ 
+   <!-- Custom Repos -->
+   <include name="snippets/custom.xml" />
+ 
+   <!-- Lineage Repos -->
+   <include name="snippets/lineage.xml" />
 
 </manifest>
