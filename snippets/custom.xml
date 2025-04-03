@@ -43,6 +43,7 @@
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="tpp" />
 
   <!-- Packages Repos -->
+  <project path="packages/apps/BtHelper" name="TheParasiteProject/packages_apps_BtHelper" revision="main" remote="github" />
   <project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="tpp" />
   <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="tpp" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="tpp" />
