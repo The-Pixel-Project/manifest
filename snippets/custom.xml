@@ -54,6 +54,7 @@
 
   <!-- System Repos -->
   <project path="system/core" name="system_core" groups="pdk" remote="tpp" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="tpp" />
 
   <!-- Vendor Repos -->
   <project path="vendor/aosp" name="vendor_aosp" remote="tpp" />
