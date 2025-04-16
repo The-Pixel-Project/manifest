@@ -16,6 +16,7 @@
            revision="refs/heads/16" />
 
   <!-- General Repos -->
+  <project path="art" name="art" groups="pdk" remote="tpp" />
   <project path="bionic" name="bionic" groups="pdk" remote="tpp" />
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="tpp" />
   <project path="build/make" name="build" groups="pdk,sysui-studio" remote="tpp">
@@ -26,6 +27,7 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
+  <project path="build/release" name="build_release" groups="pdk,tradefed,sysui-studio" remote="tpp" />
   <project path="build/soong" name="build_soong" groups="pdk,tradefed,sysui-studio" remote="tpp">
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
@@ -45,12 +47,16 @@
   <!-- Packages Repos -->
   <project path="packages/apps/BtHelper" name="TheParasiteProject/packages_apps_BtHelper" revision="main" remote="github" />
   <project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="tpp" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="tpp" />
   <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="tpp" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="tpp" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="tpp" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="tpp" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="tpp" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk" remote="tpp" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="tpp" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="tpp" />
+  <project path="packages/services/DeviceAsWebcam" name="packages_services_DeviceAsWebcam" remote="tpp" />
 
   <!-- System Repos -->
   <project path="system/core" name="system_core" groups="pdk" remote="tpp" />
@@ -58,6 +64,7 @@
 
   <!-- Vendor Repos -->
   <project path="vendor/aosp" name="vendor_aosp" remote="tpp" />
+  <project path="vendor/certification" name="vendor_certification" remote="tpp" />
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="tpp" />
   <project path="vendor/gms" name="vendor_gms" clone-depth="1" remote="tpp-gitlab" />
   <project path="vendor/google/overlays/ThemeIcons" name="vendor_google_overlays_ThemeIcons" remote="tpp" />
