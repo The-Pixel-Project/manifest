@@ -16,6 +16,7 @@
            revision="refs/heads/16" />
 
   <!-- General Repos -->
+  <project path="build/blueprint" name="android_build_blueprint" groups="pdk,tradefed" remote="tpp" />
   <project path="art" name="art" groups="pdk" remote="tpp" />
   <project path="bionic" name="bionic" groups="pdk" remote="tpp" />
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="tpp" />
