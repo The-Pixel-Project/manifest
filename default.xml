@@ -2,8 +2,21 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
+
+  <remote  name="lineageos"
+           revision="lineage-23.0"
+           fetch="https://github.com/LineageOS" />
+
+  <remote  name="tpp"
+           revision="16"
+           fetch="https://github.com/The-Pixel-Project" />
+
+  <remote name="tpp-gitlab" 
+           fetch="https://gitlab.com/MODEDGES" 
+           revision="refs/heads/16" />
+
   <default revision="refs/tags/android-16.0.0_r1"
            remote="aosp"
            sync-j="4" />
@@ -1022,4 +1035,7 @@
   </project>
   <!-- END open-source projects -->
 
+  <include name="snippets/remove.xml" />
+  <include name="snippets/lineage.xml" />
+  <include name="snippets/custom.xml" />
 </manifest>
